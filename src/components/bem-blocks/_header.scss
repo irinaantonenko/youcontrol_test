@@ -1,6 +1,7 @@
 .header {
     width: 100%;
-    padding: 16px;
+    padding: 16px 0 19px;
+    box-shadow: 0px 3px 7px -1px rgba(0,0,0,0.1);
     &__container {
         @include container;
         display: flex;
@@ -14,18 +15,52 @@
         &--special {
             justify-content: space-between;
             gap: 16px;
+            & .--svg__noun_loudspeaker::before {
+                content: '9+';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #FF0320;
+                top: -10px;
+                right: -10px;
+                color: #fff;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
     &__logo {
         width: 88px;
         height: 33px;
         @include bg('contain');
+        cursor: pointer;
+    }
+    &__icon-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        cursor: pointer;
     }
     &__icon {
         width: 24px;
         height: 24px;
-        @include bg('70%');
+        @include bg('60%', 'center');
         border-radius: 50%;
         background-color: #8E8E8E;
+        cursor: pointer;
+        position: relative;
+        &--special {
+            width: 8px;
+            height: 8px;
+            @include bg('contain');
+        }
+        &:hover {
+            background-color: #30BF60;
+        }
+        
     }
 }

@@ -3,3 +3,10 @@
 @import '**/_*.scss';
 @import '../components/**/*.scss';
 
+.main {
+    width: 100%;
+    min-height: max-content;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
