@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    padding: 16px;
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--special {
+            justify-content: space-between;
+            gap: 16px;
+        }
+    }
+    &__logo {
+        width: 88px;
+        height: 33px;
+        @include bg('contain');
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        @include bg('70%');
+        border-radius: 50%;
+        background-color: #8E8E8E;
+    }
+}
