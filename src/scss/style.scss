@@ -7,6 +7,16 @@
     width: 100%;
     min-height: max-content;
     display: flex;
-    align-items: center;
     gap: 22px;
+    &__container {
+        @include container;
+    }
+    &__img {
+        max-width: 100%;
+        padding-top: 30px;
+        &--special {
+            width: 30%;
+        }
+    }
 }
+
