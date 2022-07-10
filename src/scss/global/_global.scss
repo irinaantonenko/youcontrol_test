@@ -6,12 +6,16 @@
 
 html {
 	font-size: 14px;
+	line-height: 15px;
 }
 
 html,
 body {
 	min-height: 100%;
 	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
 }
 
 body {
@@ -31,18 +35,18 @@ h6 {
 	margin: 0;
 }
 ::-webkit-scrollbar { 
-    width: 4px;
-    height: 4px;
-    background-color: #FFFFFF;
+    width: 3px;
+    background: rgba(0, 0, 0, 0.05);
 }  
 ::-webkit-scrollbar-thumb {
-	border-radius: 2px;
-	background-color: #d1d1d1;
+	border-radius: 100px;
+	background: rgba(0, 0, 0, 0.2);	
+    height: 176px;
 }
-.delete__scroll {
+/*.delete__scroll {
 	overflow: hidden;
 }
 
 .add__scroll {
 	overflow: visible;
-}
+}*/

@@ -2,6 +2,14 @@
     width: 100%;
     padding: 16px 0 19px;
     box-shadow: 0px 3px 7px -1px rgba(0,0,0,0.1);
+    transition: 0.2s;
+    &__fixed {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-color: #fff;
+      }
     &__container {
         @include container;
         display: flex;
@@ -30,6 +38,9 @@
         gap: 4px;
         cursor: pointer;
         position: relative;
+        &:hover {
+            opacity: 0.7;
+        }
     }
     &__icon-block {            
         position: absolute;
@@ -58,7 +69,7 @@
             height: 8px;
             @include bg('contain');
         }
-        &:hover {
+        &--hover:hover {
             background-color: #30BF60;
         }        
     }
@@ -68,4 +79,7 @@
 }
 .remove {
     display: none;
+}
+.hidden {
+    overflow: hidden;
 }
