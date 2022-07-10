@@ -8,6 +8,7 @@
     min-height: max-content;
     display: flex;
     gap: 22px;
+    background-color: #F6F9FC;
     &__container {
         @include container;
     }
@@ -17,6 +18,15 @@
         &--special {
             width: 30%;
         }
+    }
+    &__paginator {
+        width: 288px;
+        height: 32px;
+        @include bg('contain');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 24px auto 40px;
     }
 }
 

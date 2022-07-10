@@ -1,0 +1,29 @@
+.tabs {
+    overflow: hidden;
+    background-color: #FFF;
+    border-bottom: 1px #D9D9D9 solid;
+    margin-bottom: 40px;
+    & button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: inset -1px 0px 0px #D9D9D9, inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9;
+        padding: 22px;
+        transition: 0.3s;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-right: 4px;
+        &:hover {
+            background-color: #F6F9FC;
+        }
+        &.active {
+            background-color: #F6F9FC;
+        }
+    }
+    &__content {
+        display: none;
+        border-top: none;
+    }
+}

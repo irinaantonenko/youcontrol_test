@@ -1,0 +1,14 @@
+<div class="tabs">
+    <button class="tabs__links" onclick="openTab(event, 'myAccount')">Мій акаунт</button>
+    <button class="tabs__links" onclick="openTab(event, 'transactionHistory')">Історія транзакцій</button>
+    <button class="tabs__links" onclick="openTab(event, 'yourMessages')">Ваші сповіщення</button>
+</div>			
+<div id="myAccount" class="tabs__content">
+    @@include('_dropdown-content-for-second-page.html')
+</div>			
+<div id="transactionHistory" class="tabs__content">
+    @@include('_dropdown-content-for-second-page.html')
+</div>			
+<div id="yourMessages" class="tabs__content">
+    @@include('_dropdown-content-for-second-page.html')
+</div>

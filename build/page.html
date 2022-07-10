@@ -39,7 +39,7 @@
         </div>        
         <div class="header__items header__items--special">
             <div id="loudspeaker" onclick="showMenu(), addActive(), removeMessage()" class="header__icon header__icon--hover --svg__noun_loudspeaker">
-                <div id="icon-block" class="header__icon-block--empty">9+</div>
+                <div id="icon-block" class="header__icon-block--empty"></div>
             </div>            
             <div class="header__icon-wrap">
                 <div class="header__icon --svg__person"></div>
@@ -52,7 +52,183 @@
 	<main class="main">
 		<img class="main__img--special" src="./img/sidebar_full.svg" alt="sidebar">
 		<div class="main__container">
-			
+			<div class="tabs">
+    <button class="tabs__links" onclick="openTab(event, 'myAccount')">Мій акаунт</button>
+    <button class="tabs__links" onclick="openTab(event, 'transactionHistory')">Історія транзакцій</button>
+    <button class="tabs__links" onclick="openTab(event, 'yourMessages')">Ваші сповіщення</button>
+</div>			
+<div id="myAccount" class="tabs__content">
+    <div class="dropdown__wrap">
+    <div class="dropdown__title-wrap">
+        <h2 class="dropdown__title">Ваші сповіщення</h2>
+    </div>
+    <div class="dropdown__list">
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">Сьогодні 29.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">28.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Оновленна вкладка судових рішень</h3>
+            <p class="dropdown__list-content">Synergistically aggregate inexpensive value after enterprise e-tailers. Assertively mesh cooperative resources before revolutionary bandwidth. Globally expedite team.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--hot">Гаряча новина</div>
+                <div class="dropdown__list-date">28.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Сьогодні YouControl провів зустріч з представниками</h3>
+            <p class="dropdown__list-content">Competently exploit competitive best practices through timely total linkage. Continually e-enable exceptional.</p>
+        </div>
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--web">Вебінар</div>
+                <div class="dropdown__list-date"> 21.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">20.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--meet">Зустріч</div>
+                <div class="dropdown__list-date">15.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Сьогодні YouControl провів зустріч з представниками</h3>
+            <p class="dropdown__list-content">Competently exploit competitive best practices through timely total linkage. Continually e-enable exceptional.</p>
+        </div>
+    </div>
+</div>
+</div>			
+<div id="transactionHistory" class="tabs__content">
+    <div class="dropdown__wrap">
+    <div class="dropdown__title-wrap">
+        <h2 class="dropdown__title">Ваші сповіщення</h2>
+    </div>
+    <div class="dropdown__list">
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">Сьогодні 29.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">28.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Оновленна вкладка судових рішень</h3>
+            <p class="dropdown__list-content">Synergistically aggregate inexpensive value after enterprise e-tailers. Assertively mesh cooperative resources before revolutionary bandwidth. Globally expedite team.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--hot">Гаряча новина</div>
+                <div class="dropdown__list-date">28.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Сьогодні YouControl провів зустріч з представниками</h3>
+            <p class="dropdown__list-content">Competently exploit competitive best practices through timely total linkage. Continually e-enable exceptional.</p>
+        </div>
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--web">Вебінар</div>
+                <div class="dropdown__list-date"> 21.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">20.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--meet">Зустріч</div>
+                <div class="dropdown__list-date">15.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Сьогодні YouControl провів зустріч з представниками</h3>
+            <p class="dropdown__list-content">Competently exploit competitive best practices through timely total linkage. Continually e-enable exceptional.</p>
+        </div>
+    </div>
+</div>
+</div>			
+<div id="yourMessages" class="tabs__content">
+    <div class="dropdown__wrap">
+    <div class="dropdown__title-wrap">
+        <h2 class="dropdown__title">Ваші сповіщення</h2>
+    </div>
+    <div class="dropdown__list">
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">Сьогодні 29.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">28.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Оновленна вкладка судових рішень</h3>
+            <p class="dropdown__list-content">Synergistically aggregate inexpensive value after enterprise e-tailers. Assertively mesh cooperative resources before revolutionary bandwidth. Globally expedite team.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--hot">Гаряча новина</div>
+                <div class="dropdown__list-date">28.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Сьогодні YouControl провів зустріч з представниками</h3>
+            <p class="dropdown__list-content">Competently exploit competitive best practices through timely total linkage. Continually e-enable exceptional.</p>
+        </div>
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--web">Вебінар</div>
+                <div class="dropdown__list-date"> 21.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item dropdown__list-item--special">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--new">оновлення</div>
+                <div class="dropdown__list-date">20.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Нові функції моніторинга</h3>
+            <p class="dropdown__list-content">Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.</p>
+        </div>
+        <div class="dropdown__list-item">
+            <div class="dropdown__list-wrap">
+                <div class="dropdown__list-btn dropdown__list-btn--meet">Зустріч</div>
+                <div class="dropdown__list-date">15.05.2019</div>
+            </div>
+            <h3 class="dropdown__list-title">Сьогодні YouControl провів зустріч з представниками</h3>
+            <p class="dropdown__list-content">Competently exploit competitive best practices through timely total linkage. Continually e-enable exceptional.</p>
+        </div>
+    </div>
+</div>
+</div>
+			<div class="main__paginator --svg__paginator"></div>
 		</div>
 		<div class="dropdown">	    
     <div id="close" class="dropdown__close" onclick="closeMenu()"></div>		
@@ -62,9 +238,8 @@
             <p class="dropdown__text">Тут будуть показані всі нові сповіщення</p>
        </div>
     </div>
-</div>	
-	</main>
-	
+</div>
+	</main>		
 	<footer class="footer">
     
     </footer>
