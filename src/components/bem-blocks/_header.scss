@@ -54,7 +54,10 @@
         font-size: 12px;
         display: flex;
         align-items: center;
-        justify-content: center;        
+        justify-content: center;  
+        &--empty {
+            display: none;
+        }      
     }
     &__icon {
         width: 24px;
