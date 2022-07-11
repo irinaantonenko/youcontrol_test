@@ -33,7 +33,7 @@ function removeMessage() {
   document.getElementById("icon-block").classList.add("remove");
 }
 
-window.onscroll = function() {myFunction()};        
+/*window.onscroll = function() {myFunction()};        
 let header = document.getElementById("myHeader");
 let sticky = header.offsetTop;        
 function myFunction() {
@@ -42,7 +42,7 @@ function myFunction() {
     } else {
     header.classList.remove("header__fixed");
     }
-}
+}*/
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;

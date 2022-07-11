@@ -34,8 +34,10 @@
 	<header class="header" id="myHeader">
     <div class="header__container">
         <div class="header__items">
-            <div class="header__logo --svg__logo">
-            </div>
+            <a class="header__link" href="https://irinaantonenko.github.io/youcontrol_test/build/index.html">
+                <div class="header__logo --svg__logo">
+                </div>
+            </a>
         </div>        
         <div class="header__items header__items--special">
             <div id="loudspeaker" onclick="showMenu(), addActive(), removeMessage()" class="header__icon header__icon--hover --svg__noun_loudspeaker">
@@ -52,7 +54,64 @@
 	<main class="main">
 		<img class="main__img--special" src="./img/sidebar_full.svg" alt="sidebar">
 		<div class="main__container">
-			<img class="main__img" src="./img/content.svg" alt="content">	
+			<img class="main__img" src="./img/content.svg" alt="content">
+			<footer class="footer">
+    <div class="footer__items">
+        <div class="footer__item">
+            <p class="footer__subtitle">Дзвінок безкоштовний</p>
+            <a class="footer__phone" href="tel:0800309077">0 800 309 077</a>
+            <a class="footer__mail" href="mailto:mail@youcontrol.com.ua">mail@youcontrol.com.ua</a>
+            <p class="footer__text">Вирішили купувати?</p>
+            <button class="footer__btn" type="submit">Замовити дзвінок</button>
+        </div>
+        <div class="footer__item">
+            <h4 class="footer__title">Для користувачів</h4>
+            <a class="footer__link" href="#">Можливості</a>
+            <a class="footer__link" href="#">Кейси</a>
+            <a class="footer__link" href="#">Тарифи</a>
+        </div>
+        <div class="footer__item">
+            <h4 class="footer__title">Наші проекти</h4>
+            <a class="footer__project" href="#">
+                <div class="footer__project-img --svg__i-youscore_logo"></div>
+                <div class="footer__project-content">
+                    <h5 class="footer__project-subtitle">YouScore</h5>
+                    <p class="footer__project-text">Доступ по API</p>
+                </div>
+            </a>
+            <a class="footer__project" href="#">
+                <div class="footer__project-img --svg__i-extensions"></div>
+                <div class="footer__project-content">
+                    <h5 class="footer__project-subtitle">Додаток</h5>
+                    <p class="footer__project-text">Chrome, Mozilla</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer__items footer__items--special">
+        <p class="footer__text footer__text--special">©YouControl – повне досьє на кожну компанію України</p>
+        <div class="footer__social-items">
+            <a class="footer__social-item" href="#">
+                <div class="footer__img --svg__i-facebook"></div>
+            </a>
+            <a class="footer__social-item" href="#">
+                <div class="footer__img --svg__i-youtube"></div>
+            </a>
+            <a class="footer__social-item" href="#">
+                <div class="footer__img --svg__linkedin"></div>
+            </a>
+            <a class="footer__social-item" href="#">
+                <div class="footer__img --svg__telegram"></div>
+            </a>
+        </div>
+        <div class="footer__pay">
+            <p class="footer__text footer__text--special">Сплачуйте онлайн:</p>
+            <div class="footer__img footer__img--special --svg__i-visa_icon"></div>
+            <div class="footer__img footer__img--special --svg__i-mastercard_icon"></div>
+        </div>
+    </div>
+</footer>
+	
 		</div>
 		<div class="dropdown">	    
     <div id="close" class="dropdown__close" onclick="closeMenu()"></div>		
@@ -116,13 +175,8 @@
     </div>
 </div>
     </div>
-</div>		
-	</main>
-	
-	<footer class="footer">
-    
-    </footer>
-
+</div>			
+	</main>		
 	<script src="./js/main.min.js"></script>
 
 </body>

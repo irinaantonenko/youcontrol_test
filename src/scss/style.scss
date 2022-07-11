@@ -7,13 +7,17 @@
     width: 100%;
     min-height: max-content;
     display: flex;
-    gap: 22px;
     background-color: #F6F9FC;
     &__container {
         @include container;
+        width: 95%;
+        position: relative;
+        & .main__img {
+            margin-left: 22px;
+        }
     }
     &__img {
-        max-width: 100%;
+        max-width: 94%;
         padding-top: 30px;
         &--special {
             width: 30%;
