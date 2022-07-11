@@ -43,6 +43,9 @@
     }
     &__wrap {
         position: relative;
+        &--special {
+            position: static;
+        }
     }
     &__wrap-empty {
         display: flex;

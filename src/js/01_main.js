@@ -1,34 +1,18 @@
+/* show/close dropdown-content */
 function showMenu() {
   document.getElementById("myDropdown").classList.toggle("dropdown__show");
   document.getElementById("close").classList.toggle("dropdown__show-close"); 
   document.body.classList.toggle("hidden");
 }
-
-// Close the dropdown if the user clicks outside of it
-/*window.addEventListener("click", function(event) {
-  if (!event.target.matches('.--svg__noun_loudspeaker')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');        
-      }
-    }
-  }
-})*/
-
 function addActive() {
   document.getElementById("loudspeaker").classList.toggle("active");  
 }
-
 function closeMenu() {
   document.getElementById("myDropdown").classList.remove("dropdown__show");
   document.getElementById("loudspeaker").classList.remove("active");
   document.getElementById("close").classList.remove("dropdown__show-close");
   document.body.classList.toggle("hidden");  
 }
-
 function removeMessage() {
   document.getElementById("icon-block").classList.add("remove");
 }
@@ -46,7 +30,7 @@ function myFunction() {
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabs__content");
+  tabcontent = document.getElementsByClassName("tabs__content"); 
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
   }
@@ -56,4 +40,23 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+/* show/close the modal */
+var modal = document.getElementById('myModal'); 
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("modal__close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
