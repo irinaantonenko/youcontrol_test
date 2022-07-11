@@ -25,5 +25,8 @@
     &__content {
         display: none;
         border-top: none;
+        &--special {
+            display: block;
+        }
     }
 }
