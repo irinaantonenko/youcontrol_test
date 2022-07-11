@@ -11,7 +11,10 @@
     &__container {
         @include container;
         width: 95%;
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: inherit;
         & .main__img {
             margin-left: 22px;
         }
